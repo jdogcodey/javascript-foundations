@@ -30,12 +30,7 @@ blackPink.appendChild(para3);
 
 container.appendChild(blackPink);
 
-const btn = document.querySelector('#btn');
-btn.onclick = () => alert("Hello World");
-
-const btn1 = document.querySelector('#btn1');
-btn1.addEventListener('click', () => {
-  alert("Hello World");
-});
-
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
 
